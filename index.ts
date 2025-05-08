@@ -107,7 +107,26 @@ console.log(filterByRating(books));
   { name: "Bag", price: 50 }
 ];
 
-console.log(getMostExpensiveProduct(products));  
+    console.log(getMostExpensiveProduct(products));  
+    
+    enum Day {
+  Monday,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+  Sunday
+    }
+
+    function getDayType(day: Day): string{
+        if (day === Day.Saturday || day === Day.Sunday) return 'Weekend';
+        else return 'Weekday';
+    }
+    
+    console.log(getDayType(Day.Monday));   
+    console.log(getDayType(Day.Sunday));  
+    
 
     async function squareAsync(n: number): Promise<number> {
     await new Promise(resolve => setTimeout(resolve, 1000));

@@ -1,33 +1,35 @@
-# Example of Union and Intersection
+# TypeScript Union and Intersection Types
 
-# Union:
+## Union Types (`|`)
 
-in `Typescript, Union` used in type . It says that either this or that means , suppose there is model of Phone, so someones mobile model can contain only number at the same time someones mobile model can have string as model name, in this case we can use union.
+In TypeScript, a **Union Type** allows a value to be one of several types. It's useful when a property can accept different types.
 
-## Union Example:
+### Union Example: Phone Model
 
-`type PhonesModel = {
-    model: string|number
-}`
+```typescript
+type PhoneModel = {
+  model: string | number; // Can be either string or number
+};
 
-# Intersection:
+const phone1: PhoneModel = { model: "iPhone 15" }; // Valid
+const phone2: PhoneModel = { model: 15 }; // Also valid
+```
 
-In intersection we have to do the opposite of `union`, Here we cant choose this or that, here we have ensuse both type or object or interface or whatever given;
-
-## Intersection Example:
-
-`
-interface BatsMan{
-PlayerIdentityBatsman: "BatsMan";
-
+```interface Batsman {
+playerType: "Batsman";
+battingAverage: number;
 }
 
-interface Bowler{
-PlayerIdentityBaller: "Baller";
+interface Bowler {
+playerType: "Bowler";
+bowlingAverage: number;
 }
-type player = BatsMan&Baller;
 
-type team:player = {
-PlayerIdentityBatsman:"BatsMan",
-PlayerIdentityBaller: "Baller"
-}`
+type AllRounder = Batsman & Bowler;
+
+const player: AllRounder = {
+playerType: "Batsman", // Must satisfy both interfaces
+battingAverage: 45.2,
+bowlingAverage: 28.7
+};
+```
