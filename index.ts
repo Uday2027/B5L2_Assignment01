@@ -20,11 +20,7 @@ formatString("Hello");
     return result; 
 }
 
-    const books = [
-  { title: "Book A", rating: 4.5 },
-  { title: "Book B", rating: 3.2 },
-  { title: "Book C", rating: 5.0 }
-];
+    
 
     function concatenateArrays<T>(...arrays: T[][]): T[]{
         let result: T[] = [];
@@ -63,7 +59,6 @@ formatString("Hello");
         }
     }
 
-    const myCar = new Car("Toyota", 2020, "Corolla");
     
 
     function processValue(value: string | number): number{
@@ -92,12 +87,7 @@ formatString("Hello");
         return result[0];
         
     }
-    const products = [
-  { name: "Pen", price: 10 },
-  { name: "Notebook", price: 25 },
-  { name: "Bag", price: 50 }
-];
-  
+    
     
     enum Day {
   Monday,
