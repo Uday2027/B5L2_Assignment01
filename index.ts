@@ -108,6 +108,17 @@ console.log(filterByRating(books));
 ];
 
 console.log(getMostExpensiveProduct(products));  
-// Output: { name: "Bag", price: 50 }
+
+    async function squareAsync(n: number): Promise<number> {
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    if (n < 0) {
+        throw new Error("Negative number not allowed");
+    }
+    return n * n;
+    }
+    
+    squareAsync(4).then(console.log);        
+    squareAsync(-3).catch(console.error);    
+    
 
 }
