@@ -16,7 +16,8 @@ In intersection we have to do the opposite of `union`, Here we cant choose this 
 
 ## Intersection Example:
 
-`interface BatsMan{
+`
+interface BatsMan{
 PlayerIdentityBatsman: "BatsMan";
 
 }
