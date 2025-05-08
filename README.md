@@ -50,8 +50,7 @@ Interface and Types are almost same, but there is actually some noticable differ
 
 Let's take an example:
 
-```
-interface Hello{
+```interface Hello{
   Hello: string;
 }
 

@@ -26,8 +26,6 @@ formatString("Hello");
   { title: "Book C", rating: 5.0 }
 ];
 
-console.log(filterByRating(books)); 
-
     function concatenateArrays<T>(...arrays: T[][]): T[]{
         let result: T[] = [];
 
@@ -37,9 +35,6 @@ console.log(filterByRating(books));
 
         return result;
     }
-    console.log(concatenateArrays(["a", "b"], ["c"]));      // Output: ["a", "b", "c"]
-    console.log(concatenateArrays([1, 2], [3, 4], [5]));  // Output: [1, 2, 3, 4, 5]
-    
 
 
     class Vehicle{
@@ -69,8 +64,6 @@ console.log(filterByRating(books));
     }
 
     const myCar = new Car("Toyota", 2020, "Corolla");
-    console.log(myCar.getInfo());  // Output: "Make: Toyota, Year: 2020"
-    console.log(myCar.getModel()); // Output: "Model: Corolla"
     
 
     function processValue(value: string | number): number{
@@ -78,8 +71,6 @@ console.log(filterByRating(books));
         else return value * 2;
     }
 
-   console.log( processValue("hello"));// Output: 5
-    console.log(processValue(10));     // Output: 20
     
     interface Product {
   name: string;
@@ -106,8 +97,7 @@ console.log(filterByRating(books));
   { name: "Notebook", price: 25 },
   { name: "Bag", price: 50 }
 ];
-
-    console.log(getMostExpensiveProduct(products));  
+  
     
     enum Day {
   Monday,
@@ -124,8 +114,6 @@ console.log(filterByRating(books));
         else return 'Weekday';
     }
     
-    console.log(getDayType(Day.Monday));   
-    console.log(getDayType(Day.Sunday));  
     
 
     async function squareAsync(n: number): Promise<number> {
@@ -135,9 +123,7 @@ console.log(filterByRating(books));
     }
     return n * n;
     }
-    
-    squareAsync(4).then(console.log);        
-    squareAsync(-3).catch(console.error);    
+      
     
 
 }
