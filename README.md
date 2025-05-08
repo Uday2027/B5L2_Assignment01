@@ -29,5 +29,4 @@ type player = BatsMan&Baller;
 type team:player = {
 PlayerIdentityBatsman:"BatsMan",
 PlayerIdentityBaller: "Baller"
-}
-`
+}`
