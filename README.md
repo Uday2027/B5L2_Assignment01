@@ -19,7 +19,7 @@ const phone2: PhoneModel = { model: 15 }; // Also valid
 
 In Typescript, a **Intersection type** allows a value to be all of the mentioned type. It is useful when there striclty follow the rules or any other have to do things.
 
-```Intersection
+```Typescript
 interface Batsman {
 playerType: "Batsman";
 battingAverage: number;
@@ -50,7 +50,8 @@ Interface and Types are almost same, but there is actually some noticable differ
 
 Let's take an example:
 
-```interface Hello{
+```Typescript
+interface Hello{
   Hello: string;
 }
 
